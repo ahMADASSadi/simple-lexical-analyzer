@@ -1,14 +1,3 @@
-# Lawin Feizi 991830243 ,Ahmad Asadi 991830205
-logo = """
-    .-. .-. .---.  ,-.    .---.   
-    | | | |/ .-. ) | |   / .-. )  
-    | `-' || | |(_)| |   | | |(_) 
-    | .-. || | | | | |   | | | |  
-    | | |)|\ `-' / | `--.\ `-' /  
-    /(  (_) )---'  |( __.')---'   
-   (__)   (_)      (_)   (_)          
-   
-"""
 KEYWORDS = [
     "let", "in", "end", "print", "if", "else", "while", "do", "and", "or", "not"
 ]
@@ -315,56 +304,6 @@ def dfa(start, final_state, text):
         elif s == 0:
             error_list += lexeme
             lexeme = ""
-        #         if s in num_states:
-        #             token_list.append(f"[num({lexeme})]\n")
-        #             lexeme = ""
-        #         elif s in [8, 9, 10, ]:
-        #             token_list.append(f"[{lexeme}]\n")
-        #             lexeme = ""
-        #         else:
-        #             if lexeme in KEYWORDS:
-        #                 token_list.append(f"[{lexeme}(keyword)]\n")
-        #                 lexeme = ""
-        #             else:
-        #                 token_list.append(f"[id({lexeme})]\n")
-        #                 lexeme = ""
-        #     elif c in SYMBOLS:
-        #         if s in num_states:
-        #             token_list.append(f"[num({lexeme})]\n")
-        #             lexeme = ""
-        #             s = 0
-        #         elif s in [8, 9, 10, ]:
-        #             if c == "=":
-        #                 token_list.append(f"[{lexeme + c}]\n")
-        #                 lexeme = ""
-        #                 s = 0
-        #                 c = ""
-        #             else:
-        #                 token_list.append(f"[{lexeme}]\n")
-        #                 lexeme = ""
-        #                 s = 0
-        #         else:
-        #             if lexeme in KEYWORDS:
-        #                 token_list.append(f"[{lexeme}(keyword)]\n")
-        #                 lexeme = ""
-        #             else:
-        #                 token_list.append(f"[id({lexeme})]\n")
-        #                 lexeme = ""
-        #             s = 0
-        #     elif s == 10:
-        #         token_list.append(f"[{lexeme}]\n")
-        #         lexeme = ""
-        #         s = 0
-        #     elif s == num_states:
-        #         token_list.append(f"[{lexeme}]\n")
-        #         lexeme = ""
-        #         s = 0
-        #     is_error = True
-        # else:
-        #     if is_error:
-        #         error_list += lexeme
-        #         lexeme = ""
-
 
 with open(file="input.txt", mode="r") as file:
     x = file.readlines()
